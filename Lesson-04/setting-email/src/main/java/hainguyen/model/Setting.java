@@ -1,4 +1,4 @@
-package model;
+package hainguyen.model;
 
 public class Setting {
     private String language;

@@ -1,6 +1,6 @@
-package dao;
+package hainguyen.dao;
 
-import model.Setting;
+import hainguyen.model.Setting;
 import org.springframework.stereotype.Repository;
 
 @Repository

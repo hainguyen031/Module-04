@@ -1,6 +1,6 @@
-package service;
+package hainguyen.service;
 
-import model.Setting;
+import hainguyen.model.Setting;
 
 public interface IEmailSettingService {
     Setting getSetting();

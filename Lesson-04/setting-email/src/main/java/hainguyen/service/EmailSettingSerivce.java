@@ -1,7 +1,7 @@
-package service;
+package hainguyen.service;
 
-import dao.IEmailSettingDao;
-import model.Setting;
+import hainguyen.dao.IEmailSettingDao;
+import hainguyen.model.Setting;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
