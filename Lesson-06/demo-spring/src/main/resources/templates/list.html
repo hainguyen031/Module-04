@@ -9,12 +9,22 @@
 </head>
 <body>
 <h2 style="text-align: center"><a href="/user/create">Create new user</a></h2>
-
+<form th:action="@{/user/search}" method="get">
+    <div class="input-group rounded">
+        <input type="search" class="form-control rounded" placeholder="Search Username" aria-label="Search"
+               aria-describedby="search-addon"/>
+        <span class="input-group-text border-0" id="search-addon">
+             <button type="submit" class="btn btn-secondary">
+    <i class="fas fa-search"></i>
+                   </button>
+  </span>
+    </div>
+</form>
 <th:block th:if="${message}">
     <p th:text="${message}"></p>
 </th:block>
 <h1 style="text-align: center">User</h1>
-<table border="1"  class="table table-hover" style="border-collapse: collapse; width: 80%; margin: 0 auto">
+<table border="1" class="table table-hover" style="border-collapse: collapse; width: 80%; margin: 0 auto">
     <tr>
         <th>Username</th>
         <th>Password</th>
