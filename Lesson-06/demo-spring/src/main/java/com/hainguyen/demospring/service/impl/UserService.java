@@ -36,4 +36,9 @@ public class UserService implements IUserService {
             userRepository.delete(user);
         }
     }
+
+    @Override
+    public List<User> searchByName(String username) {
+        return userRepository.findByUsernameLike("%"+username+"%");
+    }
 }

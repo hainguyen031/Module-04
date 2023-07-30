@@ -15,7 +15,7 @@ import java.util.List;
 @RequestMapping("/user")
 public class UserController {
     @Autowired
-    IUserService userService;
+    private IUserService userService;
 
     @GetMapping("/list")
     public ModelAndView showList() {
@@ -85,10 +85,12 @@ public class UserController {
         modelAndView.addObject("message", "User updated successfully");
         return modelAndView;
     }
-//
-//    @GetMapping("/search")
-//    public ModelAndView search(@RequestParam String username){
-//        List<User> userList = userService.searchByName(username);
-//        return new ModelAndView("list","userList",userList);
-//    }
+
+    @GetMapping("/search")
+    public ModelAndView search(@RequestParam String username){
+        List<User> userList = userService.searchByName(username);
+        ModelAndView modelAndView = new ModelAndView("list");
+        modelAndView.addObject(userList);
+        return modelAndView;
+    }
 }
