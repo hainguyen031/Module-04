@@ -15,11 +15,12 @@ public class UserService implements IUserService {
     IUserRepository userRepository;
     @Override
     public List<User> findAll() {
-        return (List<User>) userRepository.findAll();
+        return (List<User>) userRepository.findAllByStatus(true);
     }
 
     @Override
     public void save(User user) {
+        user.setStatus(true);
         userRepository.save(user);
     }
 
@@ -33,7 +34,8 @@ public class UserService implements IUserService {
     public void remove(Long id) {
         User user =findById(id);
         if(user != null) {
-            userRepository.delete(user);
+            user.setStatus(false);
+            userRepository.save(user);
         }
     }
 

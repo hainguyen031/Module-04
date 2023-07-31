@@ -9,5 +9,6 @@ import java.util.List;
 @Repository
 public interface IUserRepository extends CrudRepository<User, Long> {
     List<User> findByUsernameLike(String username);
+    List<User> findAllByStatus(boolean status);
 
 }

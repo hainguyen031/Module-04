@@ -18,6 +18,7 @@ public class User {
     private Long id;
     private String username;
     private String password;
+    private boolean status;
 
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
     private List<Address> addressList;
