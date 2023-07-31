@@ -25,7 +25,26 @@
       <td th:text="${user.password}"></td>
     </tr>
     <tr>
-      <td></td>
+      <td>Address:</td>
+      <td>
+        <ul>
+          <li th:each="address : ${user.addressList}" th:text="${address.street +', '+ address.city}"></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Class:</td>
+      <td>
+        <ul>
+          <li th:each="class : ${user.classUsers}" th:text="${class.getAClass().name}"></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>MSSV:</td>
+      <td th:text="${user.studentId.MSSV}"></td>
+    </tr>
+    <tr>
       <td><input type="submit" class="btn btn-secondary" value="Delete user"></td>
     </tr>
   </table>

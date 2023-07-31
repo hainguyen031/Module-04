@@ -28,6 +28,9 @@
     <tr>
         <th>Username</th>
         <th>Password</th>
+        <th>Address</th>
+        <th>Class</th>
+        <th>MSSV</th>
         <th>Edit</th>
         <th>Delete</th>
     </tr>
@@ -35,6 +38,17 @@
         <tr>
             <td th:text="${user.username}"></td>
             <td th:text="${user.password}"></td>
+            <td>
+                <ul>
+                    <li th:each="address : ${user.addressList}" th:text="${address.street +', '+ address.city}"></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li th:each="class : ${user.classUsers}" th:text="${class.getAClass().name}"></li>
+                </ul>
+            </td>
+            <td th:text="${user.studentId.MSSV}"></td>
             <td><a th:href="@{/user/edit/__${user.id}__ }">Edit</a></td>
             <td><a th:href="@{/user/delete/__${user.id}__ }">Delete</a></td>
         </tr>

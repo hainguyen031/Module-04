@@ -23,6 +23,11 @@ dependencies {
 	runtimeOnly 'com.mysql:mysql-connector-j'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	// https://mvnrepository.com/artifact/org.projectlombok/lombok
+	compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.26'
+	annotationProcessor 'org.projectlombok:lombok:1.18.26'
+
 }
 
 tasks.named('test') {

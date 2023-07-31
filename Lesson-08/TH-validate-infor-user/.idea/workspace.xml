@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6aaddf4-fa00-4547-a43a-df9e0960bdf2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../TH-custom-phone-validation/src/main/java/com/codegym/configuration/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TH-custom-phone-validation/src/main/java/com/codegym/configuration/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TH-custom-phone-validation/src/main/java/com/codegym/controller/PhoneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TH-custom-phone-validation/src/main/java/com/codegym/model/PhoneNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TH-custom-phone-validation/src/main/resources/validation-message.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TH-custom-phone-validation/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TH-custom-phone-validation/src/main/webapp/WEB-INF/views/result.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/configuration/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/configuration/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,10 +46,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/CODEGYM/Module-04/Lesson-06/demo-spring",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "6e9d4aedb3f2503337ca83ef330d93f3",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -163,6 +153,7 @@
       <option name="presentableId" value="Default" />
       <updated>1690730376374</updated>
       <workItem from="1690730377403" duration="998000" />
+      <workItem from="1690772096376" duration="141000" />
     </task>
     <servers />
   </component>
