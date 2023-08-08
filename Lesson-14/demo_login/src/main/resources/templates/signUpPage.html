@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login</title>
+</head>
+
+<body>
+<!-- Include _menu.html -->
+<th:block th:include="/_menu"></th:block>
+<h1>SignUp</h1>
+
+<form name='f' th:action="@{/signUp}" th:object="${appUserDto}" method='POST'>
+    <table>
+        <tr>
+            <td>User:</td>
+            <td><input type='text' th:field='*{userName}' value=''></td>
+            <td><p style="color: red" th:if="${#fields.hasErrors('userName')}"
+                   th:errors="*{userName}"></p></td>
+        </tr>
+
+        <tr>
+            <td>Password:</td>
+            <td><input type='password' th:field='*{encrytedPassword}' /></td>
+            <td><p style="color: red" th:if="${#fields.hasErrors('encrytedPassword')}"
+                   th:errors="*{encrytedPassword}"></p></td>
+        </tr>
+
+        <tr>
+            <td>Re-Enter Password:</td>
+            <td><input type='password' th:field='*{rePassword}' /></td>
+            <td><p style="color: red" th:if="${#fields.hasErrors('rePassword')}"
+                   th:errors="*{rePassword}"></p></td>
+        </tr>
+
+        <tr>
+            <td><input name="submit" type="submit" value="submit" /></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
